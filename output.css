@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  font-family: poppins, sans-serif;
+}
+
+.Main {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Main .Heading h5 {
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: all 1s;
+  border-radius: 40px;
+  z-index: 11;
+}
+.Toggler img {
+  margin-top: 4px;
+  padding-left: 20px;
+  height: 72px;
+  width: 72px;
+}
+.Toggler h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.calenderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .Heading h1 {
+    font-size: 15px;
+  }
+  .calenderContainer {
+    width: 100%;
+    overflow-x: scroll;
+    display: block;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+.calender {
+  margin-top: -100px;
+  transform: scale(80%);
+}
+
+.courses {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.credits {
+  margin-top: -50px;
+}
+.credits > * {
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+}
+.credits > div > a {
+  padding: 15px;
+}
+
+/*# sourceMappingURL=output.css.map */
